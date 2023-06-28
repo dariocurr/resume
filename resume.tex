@@ -1,0 +1,245 @@
+% font size and paper type
+\documentclass[11pt,letterpaper]{article}
+
+% set document margins
+\usepackage[left=0.5 in,top=0.4in,right=0.5in,bottom=0.4in]{geometry}
+
+% remove list style
+\usepackage{enumitem}
+
+% add href
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,    
+    urlcolor=black,
+	pdfborderstyle={/S/U/W 1}
+}
+
+% remove word breaks
+\usepackage[none]{hyphenat}
+
+% split columns
+\usepackage{multicol}
+
+% remove paragraph indentation
+\usepackage[parfill]{parskip} 
+
+% justify text
+\usepackage{ragged2e}
+
+% add svg files
+\usepackage{svg}
+
+% empty page
+\pagestyle{empty}
+
+% set space before multicol
+\setlength{\multicolsep}{0.25cm}
+
+% metadata
+\author{Dario Curreri}
+\title{Dario Curreri's resume}
+
+%%%%%%%%%%%
+
+\begin{document}
+\makeatletter
+\def\Hy@colorlink#1{\begingroup\fontshape{it}\selectfont}%
+\makeatother
+\begin{justify}
+	\begin{LARGE}
+		\textbf{Dario Curreri}
+	\end{LARGE}
+	\hspace{0.5cm}
+	\href{mailto:dariocurr@gmail.com}{dariocurr@gmail.com}
+	\hspace{0.5cm}
+	\href{https://dariocurr.github.io/}{dariocurr.github.io}
+	\hfill
+	\href{https://github.com/dariocurr/}{\includesvg[width=0.45cm,height=0.4cm]{./assets/img/github.svg}}
+	\hspace{0.1cm}
+	\href{https://www.linkedin.com/in/dariocurr}{\includesvg[width=0.45cm,height=0.45cm]{./assets/img/linkedin.svg}}
+	\hspace{0.1cm}
+	\href{https://scholar.google.it/citations?hl=en&user=DhJKkeMAAAAJ}{\includesvg[width=0.5cm,height=0.5cm]{./assets/img/graduation_cap.svg}}
+	\hspace{0.1cm}
+	\href{https://dariocurr.medium.com/}{\includesvg[width=0.5cm,height=0.5cm]{./assets/img/medium.svg}}
+	\vspace{0.3cm}
+
+	Throughout my studies and work experiences, I have honed my problem solving ability, developed several skills, faced fast-paced environments.\\
+	I am a contributor to many open source projects: I firmly believe that collaboration is the key to innovation
+
+		{\large \textbf{Experience} \strut}
+	\vspace{0.03cm}
+	\hrule
+	\begin{itemize}[label={}, leftmargin=0pt]
+		\begin{item}
+		      \textbf{DevOps \& Technical Product Owner @ \href{https://hiop.io/}{hiop}}
+		      \hfill
+		      Oct 2021 - Today
+		      \vspace{-0.15cm}
+		      \begin{itemize}[label={$\bullet$}, leftmargin=12.5pt, noitemsep]
+			      \begin{item}
+			            Co-creator of several components that led to the company's flagship product: an high-performance data processing mesh platform that enables DaC, quickly high-value data provision and data-driven decision making
+			      \end{item}
+			      \begin{item}
+			            Co-creator of an HPC infrastructure on which relies real-time AI-based applications
+			      \end{item}
+			      \begin{item}
+			            Designer and maintainer of the company's CI/CD pipelines
+			      \end{item}
+			      \begin{item}
+			            Creator and maintainer of several libraries on which the company's codebase relies
+			      \end{item}
+			      \begin{item}
+			            Co-led the growth, training and knowledge sharing among the team, which increased from 5 to 15 people
+			      \end{item}
+		      \end{itemize}
+		\end{item}
+		\begin{item}
+		      \textbf{Full stack developer @ \href{https://www.ibf.cnr.it/index.php/ibf/palermo/?lang=en}{CNR’s Institute of Biophysics}}
+		      \hfill
+		      Dec 2020 - Aug 2021
+		      \vspace{0.05cm}
+		      \\
+		      Collaborator involved in the \href{https://www.humanbrainproject.eu/en/}{Human Brain Project} with the aim of developing a Python and JS-based web application named \href{https://hbp-bsp-hhnb.cineca.it/efelg/}{NeuroFeatureExtract} to analyse electrophysiological features
+		\end{item}
+		\begin{item}
+		      \textbf{Bioinformatics trainee @ \href{https://www.ismett.edu/en/}{ISMETT}}
+		      \hfill
+		      May 2021 - Jul 2021
+		      \vspace{0.05cm}
+		      \\
+		      Practitioner on efficient algorithms and technologies to analise biological sequences represented in FASTA format, as part of a university internship project
+		\end{item}
+		\begin{item}
+		      \textbf{Collaborator of ML research project @ \href{https://www.unina.it/en_GB}{UNINA}}
+		      \hfill
+		      Nov 2019 - Mar 2020
+		      \vspace{0.05cm}
+		      \\
+		      Research project with the aim of developing a Python-based ML fuzzy classifier to diagnose celiac disease in Sicilian and Maltese children
+		\end{item}
+		\begin{item}
+		      \textbf{Full stack developer trainee @ \href{https://www.informamuse.com/en/home/}{Informamuse}}
+		      \hfill
+		      Jan 2019 - Mar 2019
+		      \vspace{0.05cm}
+		      \\
+		      Web Developer as part of a university internship project
+		\end{item}
+	\end{itemize}
+	\vspace{0.1cm}
+	{\large \textbf{Education} \strut}
+	\hrule
+	\begin{itemize}[label={}, leftmargin=0pt]
+		\begin{item}
+		      \textbf{Double Master in Computer Science @ \href{https://www.unipa.it/mobilita/en/}{UNIPA} \& \href{https://www.univ-gustave-eiffel.fr/en/}{UGE}}
+		      \hfill
+		      Sep 2019 - Oct 2021
+		      \vspace{0.05cm}
+		      \\
+		      Double Master achieved cum laude with final thesis about \href{https://dariocurr.github.io/assets/doc/master_thesis.pdf}{RDF data and columnar formats}
+		      \\
+		      ECTS: 120/120 \hspace{0.33cm} GPA: 29.29/30
+		\end{item}
+		\begin{item}
+		      \textbf{Bachelor in Computer Science @ \href{https://www.unipa.it/mobilita/en/}{UNIPA}}
+		      \hfill
+		      Sep 2016 - Aug 2019
+		      \vspace{0.05cm}
+		      \\
+		      Bachelor achieved cum laude with final thesis about \href{https://dariocurr.github.io/assets/img/poster.png}{suffix array data structure}
+		      \\
+		      ECTS: 186/180 \hspace{0.33cm} GPA: 29.00/30
+		\end{item}
+		\begin{item}
+		      \textbf{Erasmus Exchange @ \href{https://www.elte.hu/en/}{ELTE}}
+		      \hfill
+		      Sep 2018 - Jan 2019
+		      \vspace{0.05cm}
+		      \\
+		      Outstanding study experience which gave the opportunity to improve a vast set of skills
+		\end{item}
+	\end{itemize}
+	\setlength{\columnsep}{0.75cm}
+	\begin{multicols}{2}
+		\textbf{Others}\strut
+		\hrule
+		\begin{itemize}[label={}, itemsep=-5pt, leftmargin=0pt]
+			\begin{item}
+			      \href{https://cmmrs2020.mpi-sws.org/}{CMM Pre-doctoral Research School}
+			      \hfill
+			      Aug 2020
+			\end{item}
+			\begin{item}
+			      \href{http://einfose.ffos.hr/summer-school/}{ESS Information Science School}
+			      \hfill
+			      Set 2019
+			\end{item}
+			\begin{item}
+			      Scientfic High School Diploma
+			      \hfill
+			      2012 - 2016
+			\end{item}
+		\end{itemize}
+		\vspace*{\fill}
+		\columnbreak
+		\textbf{Publication}\strut
+		\hrule
+		\begin{itemize}[label={}, leftmargin=0pt, noitemsep]
+			\begin{item}
+			      \href{https://www.frontiersin.org/articles/10.3389/fninf.2021.713899/full}{The EBRAINS NeuroFeatureExtract: An Online Resource for the Extraction of Neural Activity Features From Electrophysiological Data}
+			\end{item}
+		\end{itemize}
+		\vspace*{\fill}
+	\end{multicols}
+	\vspace{0.1cm}
+	{\large \textbf{Skills}\strut}
+	\hrule
+	\begin{multicols}{3}
+		\textbf{Certifications}\strut
+		\hrule
+		\begin{itemize}[label={}, itemsep=-5pt, leftmargin=0pt]
+			\begin{item}
+			      \href{https://dariocurr.github.io/assets/doc/data_science.pdf}{Data Science}
+			\end{item}
+			\begin{item}
+			      \href{https://www.credly.com/badges/33614ca6-2f0d-456b-87e9-bf8b8591cbf8/public_url}{AWS Cloud Practitioner}
+			\end{item}
+			\begin{item}
+			      \href{https://www.credly.com/badges/e9b6c64c-2175-4345-950b-6331fd88af43/public_url}{AWS Developer Associate}
+			\end{item}
+		\end{itemize}
+		\vspace*{\fill}
+		\columnbreak
+		\textbf{Languages}\strut
+		\hrule
+		\begin{itemize}[label={}, itemsep=-5pt, leftmargin=0pt]
+			\begin{item}
+			      Italian: native speaker
+			\end{item}
+			\begin{item}
+			      \href{https://dariocurr.github.io/assets/doc/B2_english.pdf}{English: B2}
+			\end{item}
+			\begin{item}
+			      \href{https://dariocurr.github.io/assets/doc/A2_french.pdf}{French: A2}
+			\end{item}
+		\end{itemize}
+		\vspace*{\fill}
+		\columnbreak
+		\textbf{Workflow}\strut
+		\hrule
+		\begin{itemize}[label={}, itemsep=-5pt, leftmargin=0pt]
+			\begin{item}
+			      Bash, Git, Docker, CI/CD
+			\end{item}
+			\begin{item}
+			      Rust, Python, Java, Scala, C
+			\end{item}
+			\begin{item}
+			      AWS, GCP
+			\end{item}
+		\end{itemize}
+		\vspace*{\fill}
+	\end{multicols}
+\end{justify}
+\end{document}
