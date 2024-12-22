@@ -14,7 +14,3 @@ repos:
       - id: fix-byte-order-marker
       - id: mixed-line-ending
       - id: trailing-whitespace
-
-ci:
-    autoupdate_branch: main
-    autoupdate_commit_msg: ⬆ [pre-commit.ci] pre-commit autoupdate
