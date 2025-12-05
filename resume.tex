@@ -1,5 +1,8 @@
-% font size and paper type
-\documentclass[11pt,letterpaper]{article}
+% font, size and paper type
+\documentclass[10.5pt,letterpaper]{article}
+\usepackage{fontspec}
+\setsansfont{Helvetica}[Scale=0.9]
+\renewcommand{\familydefault}{\sfdefault}
 
 % set document margins
 \usepackage[left=0.5 in,top=0.4in,right=0.5in,bottom=0.4in]{geometry}
@@ -59,7 +62,7 @@
       \hspace{0.3cm}
       \href{https://scholar.google.it/citations?user=DhJKkeMAAAAJ}{\Large{\faGraduationCap}}
 
-      Innovative Senior Staff Software Engineer (DevOps \& Platform)
+      Innovative Staff Software Engineer (DevOps \& Platform)
       with over 5 years of experience architecting cloud-native distributed systems,
       delivering enterprise-scale software solutions,
       and optimizing high-performance data processing pipelines.
@@ -73,25 +76,51 @@
       \hrule
       \begin{itemize}[label={}, leftmargin=0pt]
             \begin{item}
-                  \textbf{Senior Staff Software Engineer (DevOps \& Platform) @ \href{https://hiop.io/}{hiop}}
+                  \textbf{\href{https://hiop.io/}{hiop}}
                   \hfill
                   \small{10/21 - Today}
+                  \\
+                  \small{\textbf{Staff Software Engineer} (01/23 - Today)}:
                   \vspace{-0.15cm}
                   \begin{itemize}[label={$\bullet$}, leftmargin=12.5pt, noitemsep]
                         \begin{item}
-                              Co-created the company's flagship product: high-performance data processing platform enabling rapid high-value data provision and data-driven decision making
+                              Co-created the company's flagship high-performance data processing platform, enabling rapid delivery of high-value data products:
+                              \begin{itemize}[label={-}, leftmargin=20pt, noitemsep]
+                                    \begin{item}
+                                          Designed and implemented a resilient event-driven architecture supporting high-volume, low-latency data flows using \href{https://grpc.io/}{gRPC}, advanced concurrency models, and distributed processing
+                                    \end{item}
+                                    \begin{item}
+                                          Built a state-of-the-art access layer based on \href{https://oauth.net/2/}{OAuth2} authentication RBAC
+                                    \end{item}
+                                    \begin{item}
+                                          Implemented a zero-trust architecture through a distributed proxy layer and fine-grained, service-level authorization
+                                    \end{item}
+                                    \begin{item}
+                                          Added full \href{https://microsoft.github.io/language-server-protocol/}{Language Server Protocol (LSP)} support, improving developer experience and enabling richer ecosystem tooling
+                                    \end{item}
+                                    \begin{item}
+                                          Increased query engine performance by 50\% by rewriting critical components in Rust
+                                    \end{item}
+                                    \begin{item}
+                                          Automated user onboarding and resource provisioning, significantly reducing operational overhead
+                                    \end{item}
+                              \end{itemize}
                         \end{item}
                         \begin{item}
-                              Co-created an HPC framework and infrastructure on which relies real-time AI-based applications
+                              Architected and automated CI/CD pipelines and the end-to-end SDLC workflow, improving deployment reliability, reducing release times, and enabling continuous delivery across multiple services
                         \end{item}
                         \begin{item}
-                              Designed and maintained company's CI/CD pipelines, improving drastically deployment efficiency and reliability
+                              Led technical direction and team evolution, mentoring engineers and driving processes that supported growth from 5 to 20+ team members
+                        \end{item}
+                  \end{itemize}
+                  \small{\textbf{Software Engineer} (10/21 - 12/22)}:
+                  \vspace{-0.15cm}
+                  \begin{itemize}[label={$\bullet$}, leftmargin=12.5pt, noitemsep]
+                        \begin{item}
+                              Co-created the framework and infrastructure for real-time ML/DL applications, enabling low-latency inference and robust production deployments
                         \end{item}
                         \begin{item}
-                              Developed and maintained over 20 essential libraries building the company's codebase
-                        \end{item}
-                        \begin{item}
-                              Co-led team growth, training and knowledge sharing among the team, expanding from 5 to 20+ people
+                              Developed and maintained 20+ core libraries powering the company's internal toolchain, establishing shared abstractions, coding standards, and scalable development practices
                         \end{item}
                   \end{itemize}
             \end{item}
@@ -102,29 +131,53 @@
                   \\
                   Developed from the ground a Python and JS-based web application named \href{https://hhnb.ebrains-italy.eu/efelg/}{NeuroFeatureExtract} to analyse electrophysiological features as part of the \href{https://www.humanbrainproject.eu/en/}{Human Brain Project}
             \end{item}
-            \begin{item}
-                  \textbf{Bioinformatics Trainee @ \href{https://www.ismett.edu/en/}{ISMETT}}
-                  \hfill
-                  \small{05/21 - 08/21}
-                  \\
-                  Developed efficient algorithms to analyze biological FASTA sequences, significantly enhancing data processing efficiency, as part of a university internship project
-            \end{item}
-            \begin{item}
-                  \textbf{Collaborator of ML Research Project @ \href{https://www.unina.it/en_GB}{UNINA}}
-                  \hfill
-                  \small{11/19 - 04/20}
-                  \\
-                  Built from the ground a Python-based ML fuzzy classifier to diagnose celiac disease in Sicilian and Maltese children
-            \end{item}
-            \begin{item}
-                  \textbf{Full Stack Developer Trainee @ \href{https://www.informamuse.com/en/home/}{Informamuse}}
-                  \hfill
-                  \small{01/19 - 04/19}
-                  \\
-                  Developed web applications as part of a university internship project
-            \end{item}
       \end{itemize}
 
+      \begin{minipage}[t]{10.25cm}
+            \textbf{Others}\strut
+            \hrule
+            \vspace{0.2cm}
+            \begin{itemize}[label={}, leftmargin=0pt]
+                  \begin{item}
+                        Bioinformatics Trainee @ \href{https://www.ismett.edu/en/}{ISMETT}
+                        \hfill
+                        \small{05/21 - 08/21}
+                  \end{item}
+                  \begin{item}
+                        ML Research Project Collaborator @ \href{https://www.unina.it/en_GB}{UNINA}
+                        \hfill
+                        \small{11/19 - 04/20}
+                  \end{item}
+                  \begin{item}
+                        Full Stack Developer Trainee @ \href{https://www.informamuse.com/en/home/}{Informamuse}
+                        \hfill
+                        \small{01/19 - 04/19}
+                  \end{item}
+            \end{itemize}
+      \end{minipage}
+      \hfill
+      \begin{minipage}[t]{8.05cm}
+            \textbf{Open Source}\strut
+            \hrule
+            \vspace{0.2cm}
+            \makeatletter
+            \let\oldHy@colorlink\Hy@colorlink
+            \def\Hy@colorlink#1{\begingroup\normalfont\ttfamily}%
+            \makeatother
+            {
+                  \normalfont\ttfamily
+                  \href{https://github.com/apache/datafusion}{apache/datafusion},
+                  \href{https://github.com/apache/arrow}{apache/arrow},
+                  \href{https://github.com/envoyproxy/envoy}{envoyproxy/envoy},
+                  \href{https://github.com/PyO3/maturin}{PyO3/maturin},
+                  \href{https://github.com/conda/conda}{conda/conda}
+            }
+            \makeatletter
+            \let\Hy@colorlink\oldHy@colorlink
+            \makeatother
+      \end{minipage}
+
+      \vspace{0.2cm}
       {\Large \textbf{Education} \strut}
       \hrule
       \begin{itemize}[label={}, leftmargin=0pt]
@@ -142,16 +195,9 @@
                   \\
                   Graduated cum laude with thesis on \href{https://dariocurr.github.io/assets/img/poster.png}{suffix array data structure}
             \end{item}
-            \begin{item}
-                  \textbf{Erasmus Exchange @ \href{https://www.elte.hu/en/}{ELTE}}
-                  \hfill
-                  \small{09/18 - 01/19}
-                  \\
-                  Enhanced skills through an outstanding study experience abroad
-            \end{item}
       \end{itemize}
 
-      \begin{minipage}[t]{9.1cm}
+      \begin{minipage}[t]{10.25cm}
             \textbf{Others}\strut
             \hrule
             \vspace{0.2cm}
@@ -167,20 +213,21 @@
                         \small{09/19}
                   \end{item}
                   \begin{item}
-                        Scientfic High School Diploma
+                        Erasmus Exchange @ \href{https://www.elte.hu/en/}{ELTE}
                         \hfill
-                        \small{07/16}
+                        \small{09/18 - 01/19}
                   \end{item}
             \end{itemize}
       \end{minipage}
       \hfill
-      \begin{minipage}[t]{9.1cm}
+      \begin{minipage}[t]{8.05cm}
             \textbf{Publication}\strut
             \hrule
             \vspace{0.2cm}
             \href{https://www.frontiersin.org/articles/10.3389/fninf.2021.713899/full}{The EBRAINS NeuroFeatureExtract: An Online Resource for the Extraction of Neural Activity Features From Electrophysiological Data}
       \end{minipage}
 
+      \vspace{0.2cm}
       {\Large \textbf{Skills}\strut}
       \hrule
       \begin{minipage}[t]{8.5cm}
@@ -238,12 +285,10 @@
                         Italian: native
                   \end{item}
                   \begin{item}
-                        English:
-                        \href{https://dariocurr.github.io/assets/doc/B2_english.pdf}{B2}
+                        English: C1
                   \end{item}
                   \begin{item}
-                        French:
-                        \href{https://dariocurr.github.io/assets/doc/A2_french.pdf}{A2}
+                        French: A2
                   \end{item}
             \end{itemize}
       \end{minipage}
